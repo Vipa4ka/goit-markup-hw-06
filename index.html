@@ -87,17 +87,17 @@
                             
                             <label  class="label-form" for="comment">
                                 <span class="form-span">Комментарий</span>
-                                <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
+                                <textarea class="comment" name="comment"  cols="30" rows="10"  placeholder="Введите текст"></textarea>
                             </label>
                             
                             <div class="checkbox">
                                 <label class="checkbox-label" >
-                                    <input type="checkbox" name="email"> 
-                                    <svg with="16" height="15">
+                                    <input class="checkbox-input" type="checkbox" name="checkbox"> 
+                                    <svg class="checkbox-svg" width="16" height="15">
                                         <use href=".//image/sprite.svg#Vectors-1"></use>
                                     </svg>
-                                    <span>Соглашаюсь с рассылкой и принимаю
-                                        <a href="">Условия договора</a>
+                                    <span class="consent">Соглашаюсь с рассылкой и принимаю
+                                        <a class="contract" href="">Условия договора</a>
                                     </span>
                                 </label>   
                             </div>
@@ -407,6 +407,19 @@
                             </a>
                         </li>
                     </ul>
+                </div>
+                <div class="subscription">                    
+                    <p class="subscription-text">Подпишитесь на рассылку</p>
+                    <div class="mailing">
+                        <label class="subscription-form" for="subscription">
+                            <textarea class="subscription-textarea" name="subscription" cols="30" rows="10" placeholder="E-mail"></textarea>
+                        </label>
+                        <button class="button-subscription">Подписаться
+                            <svg class="subscription-svg" width="24" height="24">
+                                <use href=".//image/sprite.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
         </footer>
