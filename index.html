@@ -27,7 +27,7 @@
                 </nav>
                 <address class="address">
                     <ul class="auth">
-                        <li class="item mail">
+                        <li class="item">
                             <a href="mailto:info@devstudio.com" class="auth-mail">
                                 <svg class="kliyenty-icon" width="16" height="12">
                                     <use href=".//image/sprite.svg#icon-envelope"></use>
@@ -35,7 +35,7 @@
                                 info@devstudio.com
                             </a>
                         </li>
-                        <li class="item tel">
+                        <li class="item">
                             <a href="tel:+380961111111" class="auth-tel">
                                 <svg class="kliyenty-icon" width="10" height="16">
                                     <use href=".//image/sprite.svg#icon-smartphone"></use>
@@ -91,8 +91,8 @@
                             </label>
                             
                             <div class="checkbox">
-                                <label class="checkbox-label" >
-                                    <input class="checkbox-input" type="checkbox" name="checkbox"> 
+                                <label>
+                                    <input type="checkbox" name="checkbox"> 
                                     <svg class="checkbox-svg" width="16" height="15">
                                         <use href=".//image/sprite.svg#Vectors-1"></use>
                                     </svg>
@@ -142,15 +142,15 @@
                     <h2 class="work-title">Чем мы занимаемся</h2>
                     <ul class="kinds">
                         <li class="kinds-foto">
-                            <img class="work-foto" src="./image/box_1.jpg" alt="img" width="370" height="294">
+                            <img  src="./image/box_1.jpg" alt="img" width="370" height="294">
                             <p class="service-text">Десктопные приложения</p>
                         </li>
                         <li class="kinds-foto">
-                            <img class="work-foto" src="./image/box_2.jpg" alt="img" width="370" height="294">
+                            <img src="./image/box_2.jpg" alt="img" width="370" height="294">
                             <p class="service-text">Мобильные приложения</p>
                         </li>
                         <li class="kinds-foto">
-                            <img class="work-foto" src="./image/box_3.jpg" alt="img" width="370" height="294">
+                            <img  src="./image/box_3.jpg" alt="img" width="370" height="294">
                             <p class="service-text">Дизайнерские решения</p>
                         </li>
                     </ul>
@@ -410,13 +410,11 @@
                 </div>
                 <div class="subscription">                    
                     <p class="subscription-text">Подпишитесь на рассылку</p>
-                    <div class="mailing">
-                        <label class="subscription-form" for="subscription">
-                            <textarea class="subscription-textarea" name="subscription" cols="30" rows="10" placeholder="E-mail"></textarea>
-                        </label>
+                    <div class="mailing">                       
+                        <input class="mailing-text" type="mailing-text" placeholder="E-mail ">
                         <button class="button-subscription">Подписаться
                             <svg class="subscription-svg" width="24" height="24">
-                                <use href=".//image/sprite.svg#icon-send"></use>
+                                <use href="./image/sprite.svg#icon-send"></use>
                             </svg>
                         </button>
                     </div>
