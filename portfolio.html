@@ -239,13 +239,17 @@
                 </div>
                 <div class="subscription">
                     <p class="subscription-text">Подпишитесь на рассылку</p>
-                    <div class="mailing">
-                        <input class="mailing-text" type="mailing-text" placeholder="E-mail ">
-                        <button class="button-subscription">Подписаться
-                            <svg class="subscription-svg" width="24" height="24">
-                                <use href="./image/sprite.svg#icon-send"></use>
-                            </svg>
-                        </button>
+                    <div>
+                        <form class="form-mailing" autocomplete="off">
+                            <label for="email" placeholder="E-mail">
+                                <input class="mailing-text" type="email" name="email" placeholder="E-mail" />
+                            </label>
+                            <button class="button-subscription">Подписаться
+                                <svg class="subscription-svg" width="24" height="24">
+                                    <use href="./image/sprite.svg#icon-send"></use>
+                                </svg>
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>

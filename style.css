@@ -461,9 +461,13 @@ h3 {
   color: var(--primary-bg-color);
 }
 
-.mailing {
-  display: flex;
+.form-mailing {
+  display: inline-flex;
+  color: rgba(255, 255, 255, 0.6);
+  background: var(--background-hero);
+  border-radius: 4px;
 }
+
 .mailing-text {
   resize: none;
   padding-top: 15px;
@@ -857,15 +861,8 @@ button {
   align-items: center;
 }
 
-.checkbox-svg {
-  display: inline-block;
-  position: absolute;
-  left: 43px;
-  border: 2px solid var(--title-text-color);
-  border-radius: 2px;
-}
 .checkbox-input {
-  /* -webkit-appearance: none; */
+  -webkit-appearance: none;
   position: absolute;
   width: 1px;
   height: 1px;
@@ -876,11 +873,22 @@ button {
   overflow: hidden;
 }
 
+.checkbox-svg {
+  display: inline-block;
+  margin-right: 7px;
+  height: 16px;
+  width: 15px;
+  border: 2px solid var(--title-text-color);
+  border-radius: 2px;
+  transition: transform 250ms linear;
+}
+
 .checkbox-input:checked + .checkbox-svg {
-  background-size: contain;
-  background-origin: border-box;
-  border-color: var(--accent-color);
   background-color: var(--accent-color);
+  background-image: url("./image/icon.svg");
+  border-color: var(--accent-color);
+  background-origin: border-box;
+  background-size: contain;
 }
 
 .contract {

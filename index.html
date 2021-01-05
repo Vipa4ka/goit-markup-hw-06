@@ -93,14 +93,12 @@
                             <div class="checkbox">
                                 <label class="checkbox-label">
                                     <input class="checkbox-input" type="checkbox" name="checkbox"> 
-                                    <svg class="checkbox-svg" width="16" height="15">
-                                        <use href=".//image/sprite.svg#icon-check"></use>
-                                    </svg>
+                                    <span class="checkbox-svg"></span>                                   
                                     <span class="consent">Соглашаюсь с рассылкой и принимаю
                                         <a class="contract" href="">Условия договора</a>
                                     </span>
                                 </label>   
-                            </div>                         
+                            </div>                   
                             
                         </form>
                         <button class="button-form">Отправить</button>
@@ -409,13 +407,17 @@
                 </div>
                 <div class="subscription">                    
                     <p class="subscription-text">Подпишитесь на рассылку</p>
-                    <div class="mailing">                       
-                        <input class="mailing-text" type="mailing-text" placeholder="E-mail ">
-                        <button class="button-subscription">Подписаться
-                            <svg class="subscription-svg" width="24" height="24">
-                                <use href="./image/sprite.svg#icon-send"></use>
-                            </svg>
-                        </button>
+                    <div>
+                        <form class="form-mailing" autocomplete="off">
+                            <label for="email" placeholder="E-mail" >                                
+                                <input class="mailing-text" type="email" name="email" placeholder="E-mail" />                                
+                            </label>                            
+                            <button class="button-subscription">Подписаться
+                                <svg class="subscription-svg" width="24" height="24">
+                                    <use href="./image/sprite.svg#icon-send"></use>
+                                </svg>
+                            </button>
+                        </form>                                 
                     </div>
                 </div>
             </div>
