@@ -852,6 +852,18 @@ button {
   color: var(--primary-text-color);
 }
 
+.checkbox-input {
+  -webkit-appearance: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .checkbox {
   display: block;
   margin-bottom: 20px;
@@ -873,7 +885,8 @@ button {
   overflow: hidden;
 }
 
-.checkbox-svg {
+.checkbox-svg::before {
+  content: "";
   display: inline-block;
   margin-right: 7px;
   height: 16px;
@@ -883,7 +896,7 @@ button {
   transition: transform 250ms linear;
 }
 
-.checkbox-input:checked + .checkbox-svg {
+.checkbox-input:checked + .checkbox-svg::before {
   background-color: var(--accent-color);
   background-image: url("./image/icon.svg");
   border-color: var(--accent-color);
